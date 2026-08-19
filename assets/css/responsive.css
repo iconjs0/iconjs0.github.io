@@ -1,0 +1,442 @@
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+
+    .terminal {
+        max-width: 650px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .terminal-body {
+        padding: 20px;
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .profile-card,
+    .expertise-card {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .toolkit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .toolkit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .toolkit-card {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .timeline {
+        margin-left: 5px;
+    }
+
+    .timeline-item {
+        padding-left: 38px;
+    }
+
+    .timeline-content {
+        padding: 22px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 26px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .ctf-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lab-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .ctf-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-overview {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .cert-card {
+        padding: 24px;
+    }
+
+    .education-card {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-form-wrapper {
+        padding: 24px;
+    }
+
+    .contact-card {
+        padding: 22px;
+    }
+
+}
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+@media (max-width: 1000px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(8, 12, 20, 0.98);
+
+        border-bottom: 1px solid #1e293b;
+
+        backdrop-filter: blur(14px);
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        opacity: 0;
+
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease;
+    }
+
+    .nav-links.active {
+        max-height: 600px;
+
+        opacity: 1;
+
+        padding: 15px 0;
+    }
+
+    .nav-links a {
+        width: 90%;
+
+        margin: auto;
+
+        padding: 14px 0;
+
+        border-bottom: 1px solid #111827;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .profile-image-wrapper {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-socials {
+        justify-content: flex-start;
+    }
+
+    .hero-terminal {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .social-rail {
+        right: 10px;
+
+        padding: 6px;
+
+        gap: 7px;
+    }
+
+    .social-link {
+        width: 38px;
+        height: 38px;
+
+        font-size: 1rem;
+    }
+
+    .social-link::before {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 12vw, 3.4rem);
+    }
+
+    .hero h2 {
+        font-size: 1.15rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .social-rail {
+        top: auto;
+        bottom: 16px;
+        right: 50%;
+
+        transform: translateX(50%);
+
+        flex-direction: row;
+
+        padding: 7px 9px;
+
+        border-radius: 12px;
+    }
+
+    .social-link {
+        width: 38px;
+        height: 38px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .project-card,
+    .expertise-card,
+    .toolkit-card,
+    .ctf-card,
+    .cert-card,
+    .education-card,
+    .contact-card {
+        border-radius: 10px;
+    }
+
+}

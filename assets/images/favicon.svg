@@ -1,0 +1,33 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 110"
+>
+
+    <path
+        d="
+        M50 5
+        L90 20
+        L90 65
+        C90 85 70 100 50 105
+        C30 100 10 85 10 65
+        L10 20
+        Z
+        "
+        fill="#080c14"
+        stroke="#22d3ee"
+        stroke-width="6"
+    />
+
+    <text
+        x="50"
+        y="62"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="27"
+        font-weight="bold"
+        fill="#22d3ee"
+    >
+        JS0
+    </text>
+
+</svg>

@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Digital forensics case study by Baraka Sostenes covering evidence acquisition, hash verification, FAT file-system analysis and deleted file recovery."
+    >
+
+    <link
+    rel="icon"
+    type="image/svg+xml"
+    href="assets/images/favicon.svg"
+>
+
+    <title>Digital Forensics Case Study | icon_js0</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/case-study.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+
+<header class="navbar" id="navbar">
+
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+
+            <span class="logo-mark">
+                <i data-lucide="shield-check"></i>
+            </span>
+
+            <span class="logo-text">
+                icon_js0
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links" id="nav-links">
+
+            <a href="../index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="../index.html#projects" class="nav-link">
+                Projects
+            </a>
+
+            <a href="../index.html#contact" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a href="../index.html#projects" class="nav-btn">
+
+                <i data-lucide="arrow-left"></i>
+                Back to Portfolio
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<aside class="social-rail" aria-label="Social media links">
+
+    <a
+        href="https://wa.me/255788197659"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link whatsapp"
+        aria-label="WhatsApp"
+        data-label="WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <a
+        href="https://www.linkedin.com/in/baraka-sostenes-51930a3a1/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link linkedin"
+        aria-label="LinkedIn"
+        data-label="LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+
+    <a
+        href="https://github.com/iconjs0"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link github"
+        aria-label="GitHub"
+        data-label="GitHub"
+    >
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+
+    <a
+        href="mailto:barakacsostenes13@gmail.com"
+        class="social-link email"
+        aria-label="Email"
+        data-label="Email"
+    >
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+</aside>
+
+
+<main>
+
+
+<section class="case-hero">
+
+    <div class="container">
+
+        <a href="../index.html#projects" class="case-back">
+            <i data-lucide="arrow-left"></i>
+            Featured Projects
+        </a>
+
+
+        <p class="section-label">
+            DIGITAL FORENSICS CASE STUDY
+        </p>
+
+
+        <h1>
+            Evidence Acquisition,
+            <span>File-System Analysis & Recovery</span>
+        </h1>
+
+
+        <p class="case-introduction">
+
+            A practical digital-forensics investigation focused on
+            acquiring forensic images, verifying evidence integrity,
+            analysing FAT file-system structures and examining
+            deleted data in a controlled laboratory environment.
+
+        </p>
+
+
+        <div class="case-tags">
+
+            <span>FTK Imager</span>
+            <span>FAT12 / FAT16 / FAT32</span>
+            <span>Hash Verification</span>
+            <span>Hex Analysis</span>
+            <span>Deleted File Recovery</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="case-overview-grid">
+
+            <div class="case-main-content">
+
+                <p class="section-label">
+                    PROJECT OVERVIEW
+                </p>
+
+
+                <h2>
+                    Preserving and analysing digital evidence correctly.
+                </h2>
+
+
+                <p>
+
+                    This project focused on fundamental digital-forensics
+                    procedures used to preserve, validate and analyse
+                    storage evidence without altering the original data.
+
+                </p>
+
+
+                <p>
+
+                    The investigation included forensic image creation,
+                    integrity verification using cryptographic hashes,
+                    examination of FAT file-system structures and analysis
+                    of deleted files and unallocated areas.
+
+                </p>
+
+            </div>
+
+
+            <aside class="case-info-card">
+
+                <div class="case-info-item">
+
+                    <span>Project Type</span>
+
+                    <p>
+                        Digital Forensics Laboratory
+                    </p>
+
+                </div>
+
+
+                <div class="case-info-item">
+
+                    <span>Primary Tool</span>
+
+                    <p>
+                        FTK Imager
+                    </p>
+
+                </div>
+
+
+                <div class="case-info-item">
+
+                    <span>File Systems</span>
+
+                    <p>
+                        FAT12 / FAT16 / FAT32
+                    </p>
+
+                </div>
+
+
+                <div class="case-info-item">
+
+                    <span>Focus</span>
+
+                    <p>
+                        Evidence Integrity & File-System Analysis
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section case-section-alt">
+
+    <div class="container">
+
+        <div class="case-section-heading">
+
+            <p class="section-label">
+                01 / INVESTIGATION OBJECTIVES
+            </p>
+
+            <h2>
+                What the forensic exercise aimed to demonstrate.
+            </h2>
+
+        </div>
+
+
+        <div class="objective-grid">
+
+
+            <article class="objective-card">
+
+                <i data-lucide="hard-drive-download"></i>
+
+                <h3>
+                    Evidence Acquisition
+                </h3>
+
+                <p>
+                    Create forensic images while preserving the
+                    original evidence source.
+                </p>
+
+            </article>
+
+
+            <article class="objective-card">
+
+                <i data-lucide="fingerprint"></i>
+
+                <h3>
+                    Integrity Verification
+                </h3>
+
+                <p>
+                    Use cryptographic hashes to verify that acquired
+                    forensic images remain unchanged.
+                </p>
+
+            </article>
+
+
+            <article class="objective-card">
+
+                <i data-lucide="binary"></i>
+
+                <h3>
+                    File-System Analysis
+                </h3>
+
+                <p>
+                    Examine FAT structures including reserved areas,
+                    FAT tables, root directories and data regions.
+                </p>
+
+            </article>
+
+
+            <article class="objective-card">
+
+                <i data-lucide="file-search"></i>
+
+                <h3>
+                    Deleted Data Analysis
+                </h3>
+
+                <p>
+                    Examine deleted files, unallocated space and
+                    recoverable artifacts.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="case-section-heading">
+
+            <p class="section-label">
+                02 / FORENSIC WORKFLOW
+            </p>
+
+            <h2>
+                Investigation process used during the laboratory.
+            </h2>
+
+        </div>
+
+
+        <div class="implementation-list">
+
+
+            <article class="implementation-item">
+
+                <span class="implementation-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        Prepare the Evidence Source
+                    </h3>
+
+                    <p>
+                        Storage media and laboratory evidence were
+                        prepared for analysis while maintaining a
+                        clear separation between original evidence
+                        and working copies.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="implementation-item">
+
+                <span class="implementation-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Create Forensic Images
+                    </h3>
+
+                    <p>
+                        Forensic images were acquired using FTK Imager
+                        so analysis could be performed on copies rather
+                        than modifying the original evidence.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="implementation-item">
+
+                <span class="implementation-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h3>
+                        Verify Evidence Integrity
+                    </h3>
+
+                    <p>
+                        MD5 and SHA-256 hashes were recorded and
+                        compared to confirm that the forensic images
+                        remained consistent after acquisition.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="implementation-item">
+
+                <span class="implementation-number">
+                    04
+                </span>
+
+                <div>
+
+                    <h3>
+                        Examine FAT Structures
+                    </h3>
+
+                    <p>
+                        Boot-sector parameters were examined to
+                        identify important FAT file-system regions
+                        and calculate their locations within the image.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="implementation-item">
+
+                <span class="implementation-number">
+                    05
+                </span>
+
+                <div>
+
+                    <h3>
+                        Analyse Deleted Data
+                    </h3>
+
+                    <p>
+                        Deleted entries, file metadata, unallocated
+                        space and remaining file contents were examined
+                        to understand how recoverable evidence can persist.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="implementation-item">
+
+                <span class="implementation-number">
+                    06
+                </span>
+
+                <div>
+
+                    <h3>
+                        Document Findings
+                    </h3>
+
+                    <p>
+                        Evidence locations, hash values, observations
+                        and recovered artifacts were documented as part
+                        of the forensic analysis process.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section case-section-alt">
+
+    <div class="container">
+
+        <div class="case-section-heading">
+
+            <p class="section-label">
+                03 / TECHNICAL ANALYSIS
+            </p>
+
+            <h2>
+                Understanding the FAT file-system structure.
+            </h2>
+
+        </div>
+
+
+        <div class="verification-grid">
+
+
+            <div class="verification-card">
+
+                <div class="verification-icon">
+                    <i data-lucide="database"></i>
+                </div>
+
+                <h3>
+                    Boot Sector
+                </h3>
+
+                <p>
+                    Parameters such as bytes per sector,
+                    sectors per cluster, reserved sectors and
+                    FAT count were examined from the boot record.
+                </p>
+
+            </div>
+
+
+            <div class="verification-card">
+
+                <div class="verification-icon">
+                    <i data-lucide="table-2"></i>
+                </div>
+
+                <h3>
+                    FAT Tables
+                </h3>
+
+                <p>
+                    File Allocation Tables were examined to understand
+                    how clusters are linked and how file allocation
+                    information is maintained.
+                </p>
+
+            </div>
+
+
+            <div class="verification-card">
+
+                <div class="verification-icon">
+                    <i data-lucide="folder-tree"></i>
+                </div>
+
+                <h3>
+                    Directory Entries
+                </h3>
+
+                <p>
+                    Root-directory and file entries were examined
+                    for filenames, attributes, timestamps and
+                    deleted-entry indicators.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="case-section-heading">
+
+            <p class="section-label">
+                04 / TECHNICAL EVIDENCE
+            </p>
+
+            <h2>
+                Evidence from acquisition and analysis.
+            </h2>
+
+        </div>
+
+
+        <div class="evidence-grid">
+
+
+            <article class="evidence-card">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="../assets/images/projects/digital-forensics/acquisition.png"
+                        alt="FTK Imager forensic evidence acquisition"
+                        loading="lazy"
+                    >
+
+                    <div class="evidence-overlay">
+
+                        <button
+                            class="evidence-view"
+                            type="button"
+                            aria-label="View evidence acquisition screenshot"
+                        >
+                            <i data-lucide="maximize-2"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">
+                        EVIDENCE 01
+                    </span>
+
+                    <h3>
+                        Forensic Image Acquisition
+                    </h3>
+
+                    <p>
+                        Evidence acquisition using FTK Imager in
+                        the controlled laboratory environment.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="evidence-card">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="../assets/images/projects/digital-forensics/hash-verification.png"
+                        alt="Digital forensic hash verification"
+                        loading="lazy"
+                    >
+
+                    <div class="evidence-overlay">
+
+                        <button
+                            class="evidence-view"
+                            type="button"
+                            aria-label="View hash verification screenshot"
+                        >
+                            <i data-lucide="maximize-2"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">
+                        EVIDENCE 02
+                    </span>
+
+                    <h3>
+                        Hash Verification
+                    </h3>
+
+                    <p>
+                        Recorded cryptographic hashes used to
+                        verify evidence integrity.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="evidence-card">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="../assets/images/projects/digital-forensics/fat-analysis.png"
+                        alt="FAT file-system forensic analysis"
+                        loading="lazy"
+                    >
+
+                    <div class="evidence-overlay">
+
+                        <button
+                            class="evidence-view"
+                            type="button"
+                            aria-label="View FAT analysis screenshot"
+                        >
+                            <i data-lucide="maximize-2"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">
+                        EVIDENCE 03
+                    </span>
+
+                    <h3>
+                        FAT Structure Analysis
+                    </h3>
+
+                    <p>
+                        Examination of file-system structures
+                        and forensic offsets.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="evidence-card">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="../assets/images/projects/digital-forensics/deleted-file.png"
+                        alt="Deleted file forensic examination"
+                        loading="lazy"
+                    >
+
+                    <div class="evidence-overlay">
+
+                        <button
+                            class="evidence-view"
+                            type="button"
+                            aria-label="View deleted file analysis screenshot"
+                        >
+                            <i data-lucide="maximize-2"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">
+                        EVIDENCE 04
+                    </span>
+
+                    <h3>
+                        Deleted File Analysis
+                    </h3>
+
+                    <p>
+                        Examination of deleted file artifacts and
+                        recoverable information within the image.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section case-section-alt">
+
+    <div class="container">
+
+        <div class="case-section-heading">
+
+            <p class="section-label">
+                05 / FORENSIC VALUE
+            </p>
+
+            <h2>
+                What the exercise demonstrates.
+            </h2>
+
+        </div>
+
+
+        <div class="security-value">
+
+
+            <div>
+                <i data-lucide="shield-check"></i>
+                <span>Evidence integrity</span>
+            </div>
+
+
+            <div>
+                <i data-lucide="history"></i>
+                <span>Deleted artifact persistence</span>
+            </div>
+
+
+            <div>
+                <i data-lucide="search"></i>
+                <span>Low-level file-system analysis</span>
+            </div>
+
+
+            <div>
+                <i data-lucide="file-check-2"></i>
+                <span>Forensic documentation</span>
+            </div>
+
+
+            <div>
+                <i data-lucide="microscope"></i>
+                <span>Repeatable forensic examination</span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <div class="container">
+
+        <div class="case-conclusion">
+
+            <p class="section-label">
+                06 / KEY TAKEAWAYS
+            </p>
+
+
+            <h2>
+                What I learned from the investigation.
+            </h2>
+
+
+            <p>
+
+                The laboratory strengthened my understanding that
+                digital forensics begins with evidence preservation.
+                Analysis becomes unreliable if the integrity of the
+                evidence cannot be demonstrated.
+
+            </p>
+
+
+            <p>
+
+                It also showed how file deletion does not necessarily
+                remove all useful information immediately. File-system
+                structures, metadata and unallocated storage can retain
+                valuable forensic artifacts after deletion.
+
+            </p>
+
+
+            <a href="../index.html#projects" class="btn btn-primary">
+
+                <i data-lucide="arrow-left"></i>
+
+                Explore More Projects
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="../index.html" class="logo">
+
+                <span class="logo-mark">
+                    <i data-lucide="shield-check"></i>
+                </span>
+
+                <span class="logo-text">
+                    icon_js0
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <p class="footer-copy">
+            © 2026 Baraka Sostenes.
+            Cybersecurity & Digital Forensics.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<button
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+<div
+    class="image-lightbox"
+    id="image-lightbox"
+    aria-hidden="true"
+>
+
+    <button
+        class="lightbox-close"
+        id="lightbox-close"
+        type="button"
+        aria-label="Close image"
+    >
+        <i data-lucide="x"></i>
+    </button>
+
+
+    <img
+        src=""
+        alt=""
+        id="lightbox-image"
+    >
+
+
+    <p id="lightbox-caption"></p>
+
+</div>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="../assets/js/case-study.js"></script>
+
+</body>
+
+</html>
