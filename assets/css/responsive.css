@@ -440,3 +440,91 @@
     }
 
 }
+
+@media (max-width: 1000px) {
+
+    /* Hide desktop CV button */
+    .nav-btn {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Mobile CV inside menu */
+    .mobile-cv-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+        width: 90%;
+
+        margin: 14px auto 8px;
+
+        padding: 12px 16px;
+
+        color: #22d3ee;
+
+        background: rgba(34, 211, 238, 0.05);
+
+        border: 1px solid #22d3ee;
+        border-radius: 8px;
+
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+    .mobile-cv-link:hover {
+        background: #22d3ee;
+        color: #080c14;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    /* Hide desktop CV */
+    .desktop-cv-btn {
+        display: none;
+    }
+
+
+    /* Show mobile CV inside hamburger */
+    .nav-links .mobile-cv-link {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+        width: 90%;
+
+        margin: 14px auto;
+
+        padding: 12px 16px;
+
+        color: #22d3ee;
+
+        background: rgba(34, 211, 238, 0.05);
+
+        border: 1px solid #22d3ee;
+        border-radius: 8px;
+
+        font-weight: 600;
+    }
+
+}
+
+    .mobile-cv-link:hover {
+        background: #22d3ee;
+        color: #080c14;
+    }
+
+}
