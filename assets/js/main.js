@@ -3,7 +3,6 @@
 ========================= */
 
 lucide.createIcons();
-
 /* =========================
    MOBILE NAVIGATION
 ========================= */
@@ -11,19 +10,35 @@ lucide.createIcons();
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", function () {
+if (menuToggle && navLinks) {
 
-    menuToggle.classList.toggle("active");
-    navLinks.classList.toggle("active");
+    menuToggle.addEventListener("click", function (event) {
 
-    const isOpen = navLinks.classList.contains("active");
+        event.stopPropagation();
 
-    menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen
-    );
+        const isOpen =
+            navLinks.classList.toggle("active");
 
-});
+        menuToggle.classList.toggle(
+            "active",
+            isOpen
+        );
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+
+    });
+
+}
 
 
 /* CLOSE MOBILE MENU AFTER CLICKING LINK */
@@ -312,27 +327,6 @@ if (contactForm) {
     );
 
 }
-menuToggle.addEventListener("click", function () {
-
-    menuToggle.classList.toggle("active");
-    navLinks.classList.toggle("active");
-
-    const isOpen =
-        navLinks.classList.contains("active");
-
-    menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen
-    );
-
-    menuToggle.setAttribute(
-        "aria-label",
-        isOpen
-            ? "Close navigation menu"
-            : "Open navigation menu"
-    );
-
-});
 
 document.addEventListener("click", function (event) {
 
