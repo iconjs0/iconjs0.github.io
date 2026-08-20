@@ -2036,9 +2036,7 @@ svg {
     position: fixed;
 
     right: 22px;
-    top: 50%;
-
-    transform: translateY(-50%);
+    bottom: 28px;
 
     display: flex;
     flex-direction: column;
@@ -2050,7 +2048,6 @@ svg {
     background: rgba(13, 19, 31, 0.88);
 
     border: 1px solid #1e293b;
-
     border-radius: 14px;
 
     backdrop-filter: blur(14px);
@@ -2060,7 +2057,6 @@ svg {
 
     z-index: 800;
 }
-
 
 .social-link {
     position: relative;
@@ -2110,10 +2106,9 @@ svg {
     position: absolute;
 
     right: 58px;
-    top: 50%;
+    
 
     transform:
-        translateY(-50%)
         translateX(8px);
 
     padding: 6px 10px;
