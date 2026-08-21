@@ -2390,3 +2390,82 @@ body {
  .nav-links .mobile-cv-link {
     display: none;
 }
+
+/* =========================
+   EDUCATION POLISH
+========================= */
+
+.education-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: #22d3ee;
+
+    opacity: 0.35;
+
+    transition: 0.3s ease;
+}
+
+.education-card:hover::before {
+    opacity: 1;
+}
+
+.education-card:hover {
+    transform: translateX(6px);
+
+    border-color:
+        rgba(34, 211, 238, 0.35);
+
+    box-shadow:
+        0 18px 40px
+        rgba(0, 0, 0, 0.22);
+}
+
+.education-year {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.education-level {
+    color: #64748b;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+}
+
+.education-institution {
+    color: #22d3ee;
+
+    font-weight: 600;
+}
+
+.education-description {
+    line-height: 1.75;
+}
+
+.education-tags span {
+    transition: 0.25s ease;
+}
+
+.education-tags span:hover {
+    color: #22d3ee;
+
+    border-color:
+        rgba(34, 211, 238, 0.35);
+}
+
