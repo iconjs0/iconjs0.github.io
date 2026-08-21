@@ -40,6 +40,29 @@ if (menuToggle && navLinks) {
 
 }
 
+const mobileCvLink =
+    document.querySelector(".mobile-cv-link");
+
+if (mobileCvLink) {
+
+    mobileCvLink.addEventListener("click", function () {
+
+        navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
+
+    });
+
+}
 
 /* CLOSE MOBILE MENU AFTER CLICKING LINK */
 
